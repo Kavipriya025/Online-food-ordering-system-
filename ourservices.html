@@ -1,0 +1,171 @@
+<html>
+<head>
+<style>
+*{
+padding:0;
+margin:0;
+}
+body{
+background-position:center;
+font-family:sans-serif;
+}
+.menu-bar{
+background:rgb(0,100,0);
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+list-style:none;
+color:#fff;
+}
+.menu-bar ul li{
+width:120px;
+margin:15px;
+padding:15px;
+}
+.menu-bar ul li a{
+text-decoration:none;
+color:white;
+}
+.active, .menu-bar ul li:hover{
+background:#2bab0d;
+border-radius:3px
+}
+.sub-menu-1{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display:block;
+position:absolute;
+background:rgb(0,100,0);
+margin-top:15px;
+margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+border-radius:0;
+text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:#b2ff00;
+}
+.sub-menu-2{
+display:none;
+}
+.hover-me:hover .sub-menu-2{
+position:absolute;
+display:block;
+margin-top:-5px;
+margin-left:140px;
+background:rgb(0,100,0);
+}
+.content{
+width:1200px;
+height:auto;
+margin:auto;
+color:black;
+position:relative;
+}
+.content h1{
+font-family:"Lucida Calligraphy";
+font-size:25px;
+padding-left:px;
+margin-top:2%;
+letter-spacing:2px;
+font-weight:bold;
+text-align:left;
+color:blue;
+}
+.content span{
+color:#ff7200;
+}
+div{
+padding:3px;
+}
+.img1{
+float:right;
+border-radius:25%;
+margin-right:2%;
+}
+.img2{
+float:left;
+border-radius:25%;
+}
+.clearfix{
+overflow:auto;
+}
+</style>
+</head>
+<body>
+<div class="menu-bar">
+<ul>
+<li><a href="D:\Projects\kitchen\home.html" target="_blank">Home</a></li>
+<li class="active"><a href="D:\Projects\kitchen\ourservices.html" target="_blank">Our Services</a></li>
+<li><a href="D:\Projects\kitchen\recipes.html">Recipes &#9660;</a>
+<div class="sub-menu-1">
+<ul>
+<li class="hover-me">IndianCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\S1.html" target="_blank">South Indian</a></li>
+<li><a href="D:\Projects\kitchen\N1.html" target="_blank">North Indian</a></li>
+<li><a href="D:\Projects\kitchen\E.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+<li class="hover-me">ForeignCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\AC1.html" target="_blank">American</a></li>
+<li><a href="D:\Projects\kitchen\C1.HTML" target="_blank">Chinese</a></li>
+<li><a href="D:\Projects\kitchen\MC1.html" target="_blank">Malaysian</a></li>
+<li><a href="D:\Projects\kitchen\E1.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li><a href="D:\Projects\kitchen\what's new.html" target="_blank">What's New</a></li>
+<li><a href="D:\Projects\kitchen\contact.html" target="_blank">Contact</a></li>
+<li><a href="D:\Projects\kitchen\feedback.html" target="_blank">Feedback</a></li>
+</ul>
+</div>
+<div class="content">
+<h1><u><span><b>Our Services</b></span></u></h1>
+<br><br>
+<div class="clearfix">
+<img class="img2" src="D:\Projects\kitchen\images\logo\call.jpeg" width="200" height="175">
+<p><b><pre><font size="4">	1.We have good communication skills, product knowledge and the ability  to handle the 
+    customer concers professionally staffs in our concern.<br><br></pre>
+<pre>	2.We have well knowledgestaffs to explain aboutour reservations, handling customer 
+   enquiries and managingfood delivery orders.<br><br></pre>
+<pre>	3.Additionally, call centers  can serve as ahub for coordinating deliveries and managing customer 
+   feedback. Call  center answers customer enquiries provide support or services.</pre></b></p>
+</div>
+<div class="clearfix">
+<img class="img1" src="D:\Projects\kitchen\images\logo\chef.jpeg" width="200" height="200">
+<pre><u><font color="blue"><h3><b>We prepare a food in a healthy way and we follow the rules and regulations 
+while preparing foods:-</h3></font></u></pre>
+<pre>	1. Hair should be properly tucked inside the cap and  wear hand gloves.<br><br></pre>
+ <pre>	2.No outer pockects and  earning or chains and also no wrist watches and rings while cooking foods.<br><br></pre>
+<pre>	3.Wear neat and clean clothes, nails should be short  and clean.<br><br></pre>
+<pre>	4.Cook food to the recommmended internal temperature  always wash your hands before and after
+         handling food. We have well trained and skillfull master chefs in our concern.</pre>
+</font>
+</b>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

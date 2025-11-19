@@ -1,0 +1,276 @@
+<html>
+<head>
+<style>
+*{
+padding:0;
+margin:0;
+
+}
+body{
+background-image:url("back.jpeg");
+background-size:cover;
+background-position:center;
+font-family:sans-serif;
+}
+.menu-bar{
+background:rgb(0,100,0);
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+list-style:none;
+color:#fff;
+}
+.menu-bar ul li{
+width:120px;
+margin:15px;
+padding:15px;
+}
+.menu-bar ul li a{
+text-decoration:none;
+color:white;
+}
+.active, .menu-bar ul li:hover{
+background:#2bab0d;
+border-radius:3px
+}
+.sub-menu-1{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display:block;
+position:absolute;
+background:rgb(0,100,0);
+margin-top:15px;
+margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+border-radius:0;
+text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:#b2ff00;
+}
+.sub-menu-2{
+display:none;
+}
+.hover-me:hover .sub-menu-2{
+position:absolute;
+display:block;
+margin-top:-5px;
+margin-left:140px;
+background:rgb(0,100,0);
+}
+.mar{
+margin-top:15px;
+font-size:21px;
+color:white;
+font-family:"Lucida Calligraphy";
+font-weight:bold;
+}
+.content{
+width:1200px;
+height:auto;
+margin:auto;
+color:blue;
+position:relative;
+}
+.content .par{
+padding-left:20px;
+padding-bottom:25px;
+font-family:Lucida Calligraphy;
+letter-spacing:1.2px;
+line-height:30px;
+}
+.content h3{
+font-family:"Lucida Calligraphy";
+font-size:25px;
+padding-left:10px;
+margin-top:-1%;
+letter-spacing:0px;
+color:blue;
+}
+.content h1{
+font-family:"Lucida Calligraphy";
+font-size:50px;
+padding-left:20px;
+margin-top:6%;
+letter-spacing:2px;
+font-weight:bold;
+}
+.content .cn{
+width:100px;
+height:40px;
+background:#ff7200;
+border:none;
+margin-bottom:10px;
+margin-left:20px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition-time:-.4s ease;
+}
+.content .cn a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+.cn:hover{
+background-color:#fff;
+}
+.content span{
+color:#ff7200;
+font-size:55px;
+}
+.form{
+width:250px;
+height:300px;
+position:absolute;
+background:linear-gradient(to top,rgb(182,244,146),rgb(51,39,147));
+top:-20px;
+left:870px;
+border-radius:10px;
+padding:25px;
+}
+.form h2{
+width:220px;
+font-size:22px;
+font-family:sans-serif;
+text-align:center;
+color:#ff7200;
+background-color:white;
+border-radius:10px;
+margin:2px;
+padding:8px;
+}
+.form input{
+width:240px;
+height:25px;
+background:transparent;
+border-bottom: 1px solid #ff7200;
+border-top:none;
+border-left:none;
+border-right:none;
+color:#fff;
+font-size:15px;
+letter-spacing:1px;
+margin-top:30px;
+font-family:sans-serif;
+}
+.form input:focus{
+outline:none;
+}
+::placeholder{
+color:#fff;
+font-family:Arial;
+}
+.btrn{
+width:240px;
+height:40px;
+background:#ff7200;
+border:none;
+margin-top:30px;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+color:white;
+transition:0.4s ease;
+}
+.btrn:hover{
+background:white;
+color:#ff7200;
+}
+.btrn a{
+text-decoration:none;
+color:black;
+font-weight:bold;
+}
+.form .link{
+font-family:Arial;
+font-size:17px;
+padding-top:20px;
+text-align:center;
+}
+.form .link a{
+text-decoration:none;
+color:#ff7200;
+}
+.marq{
+margin-top:50px;
+font-size:21px;
+color:black;
+font-family:"Lucida Calligraphy";
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="D:\Projects\kitchen\home.html" target="_blank">Home</a></li>
+<li><a href="D:\Projects\kitchen\ourservices.html" target="_blank">Our Services</a></li>
+<li><a href="D:\Projects\kitchen\recipes.html" target="_blank">Recipes &#9660;</a>
+<div class="sub-menu-1">
+<ul>
+<li class="hover-me">IndianCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\S1.html" target="_blank">South Indian</a></li>
+<li><a href="D:\Projects\kitchen\N1.html" target="_blank">North Indian</a></li>
+<li><a href="D:\Projects\kitchen\E.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+<li class="hover-me">ForeignCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\AC1.html" target="_blank">American</a></li>
+<li><a href="D:\Projects\kitchen\C1.HTML" target="_blank">Chinese</a></li>
+<li><a href="D:\Projects\kitchen\MC1.html" target="_blank">Malaysian</a></li>
+<li><a href="D:\Projects\kitchen\E1.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li><a href="D:\Projects\kitchen\what's new.html" target="_blank">What's New</a></li>
+<li><a href="D:\Projects\kitchen\contact.html" target="_blank">Contact</a></li>
+<li><a href="D:\Projects\kitchen\feedback.html" target="_blank">Feedback</a></li>
+</ul>
+</div>
+<div class="mar">
+<marquee bgcolor="ff00ff">*Explore our Delicious Recipes In Various Cuisines Under One Roof*
+ Low Cost & Healthy Way*</marquee>
+</div>
+<div class="content">
+<h1> Flavourfull <br><span>Kitchen</span></h1>
+<p class="par">Food is a symbolic of love when words are inadequate.Cooking is a caring<br> and nurturing act.
+It's kind of the ultimate gift for someone, to cook for them.</p>
+<h3>Come and Explore our delicious recipes.</h3>
+<button class="cn"><a href="D:\Projects\kitchen\signup.html" target="_blank">Order Now</a></button>
+<div class="form">
+<h2>Login Here</h2>
+<input type="email" name="email" placeholder="Enter Email here">
+<input type="password" name="password" placeholder="Enter password here">
+<button class="btrn"><a href="D:\Projects\kitchen\ourservices.html" target="_blank">Login</a></button>
+<p class="link"> Don't have an account<br>
+<a href="D:\Projects\kitchen\signup.html" target="_blank">Sign up here</a></p>
+</div>
+</div>
+<div class="marq">
+<marquee bgcolor="00ffff">*Available On Both Cash & Online Payments*Today Only 15% Discount On All Cuisines* Hurry Up!!
+</marquee>
+</div>
+</body>
+</html>

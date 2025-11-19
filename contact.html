@@ -1,0 +1,248 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0:
+}
+body{
+background-color:#29e7cd;
+font-size:14px;
+font-family:sans-serif;
+overflow-y:hidden;
+}
+.menu-bar{
+background:rgb(0,100,0);
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+list-style:none;
+color:#fff;
+}
+.menu-bar ul li{
+width:120px;
+margin:15px;
+padding:15px;
+}
+.menu-bar ul li a{
+text-decoration:none;
+color:white;
+}
+.active, .menu-bar ul li:hover{
+background:#2bab0d;
+border-radius:3px
+}
+.sub-menu-1{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display:block;
+position:absolute;
+background:rgb(0,100,0);
+margin-top:15px;
+margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+border-radius:0;
+text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:#b2ff00;
+}
+.sub-menu-2{
+display:none;
+}
+.hover-me:hover .sub-menu-2{
+position:absolute;
+display:block;
+margin-top:-5px;
+margin-left:140px;
+background:rgb(0,100,0);
+}
+.container{
+width:70%;
+margin:20px auto;
+}
+.contact-box{
+background:#fff;
+display:flex;
+}
+.contact-left{
+flex-basis:45%;
+padding:40px 60px;
+}
+.contact-right{
+flex-basis:40%;
+padding:30px;
+background:#b3dfa1;
+}
+h1{
+margin-bottom:5px;
+}
+.container p{
+margin-bottom:10px;
+}
+.input-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+}
+.input-row .input-group{
+flex-basis:45%;
+}
+input{
+width:100%;
+border:none;
+border-bottom: 1px solid black;
+outline:none;
+padding-bottom:5px;
+}
+textarea{
+width:100%;
+border:1px solid black;
+padding:10px;
+outline:none;
+box-sizing:border-box;
+}
+label{
+margin-bottom: 6px;
+display:block;
+color:#1c00b5;
+}
+button{
+background:#1c00b5;
+width:100px;
+border:none;
+outline:none;
+color:#fff;
+ border-radius:30px;
+height:35px;
+margin-top:20px;
+box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+color:#1c00b5;
+font-weight:600;
+margin-bottom:30px;
+}
+.contact-left .btn a{
+text-decoration:none;
+color:white;
+}
+.contact-right h3{
+font-weight:600;
+margin-bottom:30px;
+}
+tr td:first-child{
+padding-right:20px;
+}
+tr td{
+padding-top:20px;
+}
+</style>
+</head>
+<body>
+<div class="menu-bar">
+<ul>
+<li><a href="D:\Projects\kitchen\home.html" target="_blank">Home</a></li>
+<li><a href="D:\Projects\kitchen\ourservices.html" target="_blank">Our Services</a></li>
+<li><a href="D:\Projects\kitchen\recipes.html" target="_blank">Recipes &#9660;</a>
+<div class="sub-menu-1">
+<ul>
+<li class="hover-me">IndianCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\S1.html" target="_blank">South Indian</a></li>
+<li><a href="D:\Projects\kitchen\N1.html" target="_blank">North Indian</a></li>
+<li><a href="D:\Projects\kitchen\E.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+<li class="hover-me">ForeignCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\AC1.html" target="_blank">American</a></li>
+<li><a href="D:\Projects\kitchen\C1.HTML" target="_blank">Chinese</a></li>
+<li><a href="D:\Projects\kitchen\MC1.html" target="_blank">Malaysian</a></li>
+<li><a href="D:\Projects\kitchen\E1.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li><a href="D:\Projects\kitchen\what's new.html" target="_blank">What's New</a></li>
+<li class="active"><a href="D:\Projects\kitchen\contact.html" target="_blank">Contact</a></li>
+<li><a href="D:\Projects\kitchen\feedback.html" target="_blank">Feedback</a></li>
+</ul>
+</div>
+<div class="container">
+<h1>Connect With Us</h1>
+<p>We would like to respond to your queries and help you succeed.Feel free to get in touch 
+with us.</p>
+<div class="contact-box">
+<div class="contact-left">
+<h3>Send Your Request</h3>
+<form>
+<div class="input-row">
+<div class="input-group">
+<label>Name</label>
+<input type="text"  placeholder="Enter  the name">
+</div>
+<div class="input-group">
+<label>Mobile</label>
+<input type="text"  placeholder="Enter mobile number">
+</div>
+</div>
+<div class="input-row">
+<div class="input-group">
+<label>Email</label>
+<input type="Email"  placeholder="Enter the E-mail">
+</div>
+<div class="input-group">
+<label>subject</label>
+<input type="text"  placeholder="Enter the text">
+</div>
+</div>
+<label>Message</label>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit" class="btn"><a href="D:\Projects\kitchen\send.html" target="_blank">SEND</a></button>
+</form>
+</div>
+<div class="contact-right">
+<h3>Reach Us</h3>
+<table>
+<tr>
+<td><img src="D:\Projects\kitchen\images\logo\logomail.jpeg" width="50" height="50"></td>
+<td>kitchenbox@gmail.com</td>
+</tr>
+<tr>
+<td><img src="D:\Projects\kitchen\images\logo\logocall.jpeg" width="50" height="50"></td>
+<td>880574 48770</td>
+</tr>
+<tr>
+<td><img src="D:\Projects\kitchen\images\logo\logowh.jpeg" width="50"  height="50"></td>
+<td>880574 48770</td>
+</tr>
+<tr>
+<td><img src="D:\Projects\kitchen\images\logo\1.jpeg" width="50" height="50"></td>
+<td>212, Ground floor, 7th cross<br>street ,Periyar road, Gobichettipalayam<br>Erode-638454.</td>
+</tr>
+</div>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

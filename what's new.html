@@ -1,0 +1,151 @@
+<html>
+<head>
+<style>
+*{
+padding:0;
+margin:0;
+}
+body{
+background-position:center;
+font-family:sans-serif;
+}
+.menu-bar{
+background:rgb(0,100,0);
+text-align:center;
+}
+.menu-bar ul{
+display:inline-flex;
+list-style:none;
+color:#fff;
+}
+.menu-bar ul li{
+width:120px;
+margin:15px;
+padding:15px;
+}
+.menu-bar ul li a{
+text-decoration:none;
+color:white;
+}
+.active, .menu-bar ul li:hover{
+background:#2bab0d;
+border-radius:3px
+}
+.sub-menu-1{
+display:none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+display:block;
+position:absolute;
+background:rgb(0,100,0);
+margin-top:15px;
+margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+display:block;
+margin:10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+width:150px;
+padding:10px;
+border-bottom:1px dotted #fff;
+border-radius:0;
+text-align:left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+color:#b2ff00;
+}
+.sub-menu-2{
+display:none;
+}
+.hover-me:hover .sub-menu-2{
+position:absolute;
+display:block;
+margin-top:-5px;
+margin-left:140px;
+background:rgb(0,100,0);
+}
+.content{
+width:1200px;
+height:auto;
+margin:auto;
+color:black;
+position:relative;
+}
+.content h2{
+font-family:"Lucida Calligraphy";
+font-size:25px;
+padding-left:px;
+margin-top:2%;
+letter-spacing:2px;
+font-weight:bold;
+text-align:left;
+color:blue;
+}
+.content span{
+color:#ff7200;
+}
+img{
+border-radius:50%;
+float:center;
+}
+.pan{
+float:left;
+}
+</style>
+</head>
+<body>
+<div class="menu-bar">
+<ul>
+<li><a href="D:\Projects\kitchen\home.html" target="_blank">Home</a></li>
+<li><a href="D:\Projects\kitchen\ourservices.html" target="_blank">Our Services</a></li>
+<li><a href="D:\Projects\kitchen\recipes.html">Recipes &#9660;</a>
+<div class="sub-menu-1">
+<ul>
+<li class="hover-me">IndianCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\S1.html" target="_blank">South Indian</a></li>
+<li><a href="D:\Projects\kitchen\N1.html" target="_blank">North Indian</a></li>
+<li><a href="D:\Projects\kitchen\E.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+<li class="hover-me">ForeignCuisines &#9660;
+<div class="sub-menu-2">
+<ul>
+<li><a href="D:\Projects\kitchen\AC1.html" target="_blank">American</a></li>
+<li><a href="D:\Projects\kitchen\C1.HTML" target="_blank">Chinese</a></li>
+<li><a href="D:\Projects\kitchen\MC1.html" target="_blank">Malaysian</a></li>
+<li><a href="D:\Projects\kitchen\E1.html" target="_blank">Evening Bite</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="active"><a href="D:\Projects\kitchen\what's new.html" target="_blank">What's New</a></li>
+<li><a href="D:\Projects\kitchen\contact.html" target="_blank">Contact</a></li>
+<li><a href="D:\Projects\kitchen\feedback.html" target="_blank">Feedback</a></li>
+</ul>
+</div>
+<div class="content">
+<h2><center><u><font color="red">TODAY'S SPECIAL MENU</font></u></center></h2><br><br>
+<p class="pan"><img src="D:\Projects\kitchen\images\logo\ragi.jpeg" 
+style="width:300px; height:300px; margin-right:50px;">
+<h3><font size="6" color="green"><u>MILLET CHOCOLATE CAKE</u></font></h3><br>
+<font size="4">1.Millet Flour cake is a good source of plant-based protein.<br><br>
+2.It is high in fiber,which helps to improve digestion.<br><br>
+3.Millets are used to reduce the risk of chronic diseases such as heart disease and cancer.<br><br>
+4.It hhelps to produce good fats,which are necessary for weight loss.<br><br>
+5.It contains Vitamin-A.<br><br>
+6.Iron is important for transporting oxygen to your lungs.<br><br>
+</p>
+<marquee bgcolor="00ffff"><font size="5"><b>
+ Today's Special  Offer Don't Miss It! Hurry Up!</b></font></marquee><br><br>
+</div>
+</body>
+</html>
